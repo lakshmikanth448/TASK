@@ -15,63 +15,7 @@ public class BankingApp {
 
         System.out.println("Created accounts:");
         service.printAllAccounts();
-        //=============================Menu driven=================================
-        // Scanner sc = new Scanner(System.in);
-        // boolean running = true;
-
-        // while (running) {
-        //     System.out.println("\n--- Banking Menu ---");
-        //     System.out.println("1. Deposit");
-        //     System.out.println("2. Withdraw");
-        //     System.out.println("3. Transfer");
-        //     System.out.println("4. Exit");
-        //     System.out.print("Enter choice: ");
-
-        //     int choice = sc.nextInt();
-
-        //     try {
-        //         switch (choice) {
-        //             case 1:
-        //                 System.out.print("Enter Account Number: ");
-        //                 String depAcc = sc.next();
-        //                 System.out.print("Enter Amount: ");
-        //                 double depAmt = sc.nextDouble();
-        //                 service.deposit(depAcc, depAmt);
-        //                 System.out.println("Deposit successful");
-        //                 break;
-
-        //             case 2:
-        //                 System.out.print("Enter Account Number: ");
-        //                 String witAcc = sc.next();
-        //                 System.out.print("Enter Amount: ");
-        //                 double witAmt = sc.nextDouble();
-        //                 service.withdraw(witAcc, witAmt);
-        //                 System.out.println("Withdrawal successful");
-        //                 break;
-
-        //             case 3:
-        //                 System.out.print("From Account Number: ");
-        //                 String fromAcc = sc.next();
-        //                 System.out.print("To Account Number: ");
-        //                 String toAcc = sc.next();
-        //                 System.out.print("Amount: ");
-        //                 double amt = sc.nextDouble();
-        //                 service.transfer(fromAcc, toAcc, amt);
-        //                 System.out.println("Transfer successful");
-        //                 break;
-
-        //             case 4:
-        //                 running = false;
-        //                 break;
-
-        //             default:
-        //                 System.out.println("Invalid choice");
-        //         }
-        //     } catch (Exception e) {
-        //         System.err.println("Operation failed: " + e.getMessage());
-        //     }
-        // }
-//==============================================================================================================================================
+       
         // Create worker threads to simulate concurrent users
         List<Thread> threads = new ArrayList<>();
 
@@ -132,4 +76,5 @@ public class BankingApp {
         }
     }
 }
+
 
